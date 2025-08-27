@@ -1,21 +1,11 @@
 @import "reboot.min.scss";
-
-@font-face {
-  font-family: "Archangelsk";
-  src: url("../fonts/archangelsk.eot"); /* IE 9 Compatibility Mode */
-  src: url("../fonts/archangelsk.eot?#iefix") format("embedded-opentype"),
-    /* IE < 9 */ url("../fonts/archangelsk.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/archangelsk.woff") format("woff"),
-    /* Firefox >= 3.6, any other modern browser */
-      url("../fonts/archangelsk.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/archangelsk.svg#archangelsk")
-      format("svg"); /* Chrome < 4, Legacy iOS */
-}
+@import "fonts.scss";
 
 body {
-  font-family: "Archangelsk";
+  font-family: Archangelsk;
+  color: black;
 }
-
+// Главная
 .main {
   max-width: 100%;
   position: relative;
@@ -24,21 +14,37 @@ body {
     width: 624px;
     height: 369px;
     top: 631px;
-    left: 976px;
+    left: 968px;
     background-color: #f8f200;
-    padding: 40px 60px;
+    padding: 0 70px;
+    padding-top: 75px;
+    margin-bottom: 50px;
     overflow: hidden;
-    border-radius: 100px 0 100px 0;
+    clip-path: polygon(
+      50px 0,
+      0 0,
+      100% 0,
+      100% calc(100% - 50px),
+      calc(100% - 50px) 100%,
+      0 100%,
+      0 0,
+      0 50px
+    );
   }
-  .main__text{
-   font-size: 62px;
+  .main__text {
+    font-size: 62px;
+    line-height: 100%;
   }
   .main__learn-more {
-   width: 272px;
-   height: 78px;
-   background-color: black;
-   color: #f8f200;
-   font-size: 24px;
+    display: inline-block;
+    background-color: black;
+    color: #f8f200;
+    font-size: 24px;
+    font-family: Roboto;
+    font-weight: 600;
+    padding: 21px 51px;
+    margin-top: 10px;
+    text-decoration: none;
   }
 }
 .header {
@@ -63,4 +69,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+//Краткая информация об игре и рызыгрышь призов
+.info-game {
+  max-width: 100%;
+  padding: 0 320px;
+  padding-top: 70px;
+}
+.info-game__pecture {
+}
+.info-game__pecture_grid {
+}
+.lottery {
+}
+.lottery__title {
+}
+.lottery__main {
+}
+.lottery__main_flex {
+}
+.lottery__input {
+}
+.lottery__product {
 }
