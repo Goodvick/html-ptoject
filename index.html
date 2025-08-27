@@ -16,12 +16,8 @@
       />
       <!-- <img src="img/hero-2.png" alt="hero2">
       <img src="img/hero-3.png" alt="hero3"> -->
-      <div class="header header_flex">
-        <img
-          class="header__logo"
-          src="img/svg/Cyberpunk_2077_logo.svg"
-          alt="Cyberpunk 2077"
-        />
+      <div class="header">
+        <img src="img/svg/Cyberpunk_2077_logo.svg" alt="Cyberpunk 2077" />
         <div class="header__socials header__socials_flex">
           <a href="#"><img src="img/svg/youtube.svg" alt="youtube" /></a>
           <a href="#"><img src="img/svg/vk.svg" alt="vk" /></a>
@@ -36,7 +32,7 @@
         <a href="#" class="main__learn-more">Узнать больше</a>
       </div>
     </header>
-    <!-- Краткая информация об игре и рызыгрышь призов-->
+    <!-- Краткая информация об игре -->
     <div class="info-game">
       <h1 style="font-size: 62px">Найт-Сити изменит тебя навсегда!</h1>
       <p
@@ -44,15 +40,13 @@
           font-size: 18px;
           font-family: Roboto;
           font-weight: 400;
-          max-width: 75%;
+          max-width: 952px;
           margin-top: 20px;
           line-height: 34px;
           color: gray;
         "
       >
-        <a href="#" style="text-decoration: none; font-weight: 700"
-          >Cyberpunk 2077</a
-        >
+        <a class="link" href="#">Cyberpunk 2077</a>
         — приключенческая ролевая игра, действие которой происходит в мегаполисе
         Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты
         играешь за V, наёмника в поисках устройства, позволяющего обрести
@@ -60,25 +54,47 @@
         персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета
         и всё, что тебя окружает.
       </p>
-      <div class="info-game__pecture info-game__pecture_grid">
-        <!-- <img src="img/grid_img1.png" alt="img1" />
-        <img src="img/grid_img2.png" alt="img2" />
-        <img src="img/grid_img3.png" alt="img3" /> -->
+      <div class="info-game__picture">
+        <div class="info-game__grid">
+          <div
+            class="info-game__img"
+            style="background-image: url('img/grid_img1.png')"
+          ></div>
+          <div
+            class="info-game__img"
+            style="background-image: url('img/grid_img2.png')"
+          ></div>
+        </div>
+        <div
+          class="info-game__img"
+          style="
+            width: 788px;
+            height: 424px;
+            background-image: url('img/grid_img3.png');
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 2;
+          "
+        ></div>
       </div>
     </div>
-
-    <div class="lottery">
-      <div class="lottery__title">
-        <img src="" alt="" />
-        <h1>Играй и выигрывай!</h1>
+    <!-- Нижнее подчёркивание блока info-game -->
+    <div class="bottom-line"></div>
+    <!-- Специальное предложение -->
+    <div class="promotion">
+      <div class="promotion__title">
+        <img src="img/svg/promo.svg" alt="img promo" />
+        <h1 style="font-size: 62px; margin-left: 24px">Играй и выигрывай!</h1>
       </div>
-      <p>
-        Играй в Cyberpunk 2077 и получи возможность выиграть консоль Xbox Series
-        X или Sony PlayStation 5! Заполни форму ниже и приложи скриншот о
-        покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)
+      <p style="font-size: 18px; font-family: Roboto">
+        Играй в <a class="link" href="#">Cyberpunk 2077</a> и получи возможность
+        выиграть консоль <a class="link" href="#">Xbox Series X</a> или
+        <a class="link" href="#">Sony PlayStation 5!</a>
+        Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша
+        будут подведены 1 февраля. Удачи! ;)
       </p>
-      <div class="lottery__main lottery__main_flex">
-        <div class="lottery__input">
+      <div class="promotion__main promotion__main_flex">
+        <div class="promotion__input">
           <form action="">
             <input type="text" placeholder="Как тебя зовут?" />
             <input type="email" placeholder="Твой e-mail" />
@@ -94,7 +110,7 @@
             </label>
           </form>
         </div>
-        <img class="lottery__product" />
+        <img class="promotion__product" />
       </div>
     </div>
   </body>

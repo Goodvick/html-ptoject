@@ -14,12 +14,11 @@ body {
     width: 624px;
     height: 369px;
     top: 631px;
-    left: 968px;
+    left: 50.8%;
     background-color: #f8f200;
     padding: 0 70px;
-    padding-top: 75px;
+    padding-top: 72px;
     margin-bottom: 50px;
-    overflow: hidden;
     clip-path: polygon(
       50px 0,
       0 0,
@@ -48,14 +47,15 @@ body {
   }
 }
 .header {
-  width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 67.941%;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
   margin-top: 20px;
-  .header__logo {
-  }
   .header__socials {
     width: 379px;
   }
@@ -65,30 +65,74 @@ body {
     justify-content: space-between;
   }
 }
-.header_flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-//Краткая информация об игре и рызыгрышь призов
+//Краткая информация об игре
 .info-game {
-  max-width: 100%;
-  padding: 0 320px;
+  max-width: 66.4%;
+  margin: 0 auto;
   padding-top: 70px;
+  .info-game__picture {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    .info-game__grid {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      gap: 32px;
+    }
+    .info-game__img {
+      width: 460px;
+      height: 196px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      clip-path: polygon(
+        50px 0,
+        0 0,
+        100% 0,
+        100% calc(100% - 50px),
+        calc(100% - 50px) 100%,
+        0 100%,
+        0 0,
+        0 50px
+      );
+    }
+  }
 }
-.info-game__pecture {
+// Нижнее подчёркивание блока info-game
+.bottom-line {
+  max-width: 100%;
+  height: 70px;
+  background-image: url("../img/bottom-line.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-top: 70px;
 }
-.info-game__pecture_grid {
+// Специальное предложение
+.promotion {
+  max-width: 100%;
+  background-color: black;
+  color: white;
+  padding: 0 320px;
+  padding-top: 15px;
+  .promotion__title {
+    display: flex;
+    align-items: end;
+  }
 }
-.lottery {
+
+.promotion__main {
 }
-.lottery__title {
+.promotion__main_flex {
 }
-.lottery__main {
+.promotion__input {
 }
-.lottery__main_flex {
+.promotion__product {
 }
-.lottery__input {
-}
-.lottery__product {
+.link {
+  text-decoration: none;
+  font-weight: 700;
+  color: #82bbd9;
 }
