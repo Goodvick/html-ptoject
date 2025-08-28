@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap Reboot v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -572,21 +573,20 @@ body {
 
 .main {
   max-width: 100%;
-  position: relative;
 }
 .main .main__more {
   position: absolute;
   width: 624px;
   height: 369px;
   top: 631px;
-  left: 50.8%;
+  left: 51.3%;
   background-color: #f8f200;
   padding: 0 70px;
   padding-top: 72px;
   margin-bottom: 50px;
   clip-path: polygon(50px 0, 0 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%, 0 0, 0 50px);
 }
-.main .main__text {
+.main .main__more .main__text {
   font-size: 62px;
   line-height: 100%;
 }
@@ -623,16 +623,17 @@ body {
 }
 
 .info-game {
-  max-width: 66.4%;
+  width: 1280px;
   margin: 0 auto;
   padding-top: 70px;
 }
 .info-game .info-game__picture {
   max-width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 60px;
+  gap: 32px;
 }
 .info-game .info-game__picture .info-game__grid {
   display: grid;
@@ -660,6 +661,7 @@ body {
 
 .promotion {
   max-width: 100%;
+  height: 1500px;
   background-color: black;
   color: white;
   padding: 0 320px;
@@ -668,6 +670,70 @@ body {
 .promotion .promotion__title {
   display: flex;
   align-items: end;
+}
+.promotion .promotion__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.promotion .promotion__main .promotion__input {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+.promotion .promotion__main .promotion__input .promotion__form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-family: Roboto;
+  font-size: 18px;
+  gap: 35px;
+}
+.promotion .promotion__main .promotion__input .promotion__form > input[placeholder] {
+  border: none;
+  background-color: black;
+  color: white;
+  border-bottom: 1px solid gray;
+}
+.promotion .promotion__main .promotion__input .promotion__form > input[placeholder]::-moz-placeholder {
+  color: #FFFFFF;
+  font-weight: 300;
+}
+.promotion .promotion__main .promotion__input .promotion__form > input[placeholder]::placeholder {
+  color: #FFFFFF;
+  font-weight: 300;
+}
+.promotion .promotion__main .promotion__input .promotion__form > input[placeholder]:focus {
+  outline: none;
+}
+.promotion .promotion__main .promotion__input .promotion__form > button {
+  width: 192px;
+  height: 59px;
+  font-family: Roboto;
+  font-weight: 700;
+  border: none;
+  background-color: #f8f200;
+}
+.promotion .promotion__main .promotion__input .promotion__form .promotion__checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  border: 1px solid white;
+}
+.promotion .promotion__main .promotion__input .promotion__form .promotion__checkbox:checked {
+  position: relative;
+}
+.promotion .promotion__main .promotion__input .promotion__form .promotion__checkbox:checked::before {
+  content: "✓";
+  position: absolute;
+  color: #f8f200;
+  font-size: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .link {

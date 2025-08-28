@@ -8,13 +8,12 @@ body {
 // Главная
 .main {
   max-width: 100%;
-  position: relative;
   .main__more {
     position: absolute;
     width: 624px;
     height: 369px;
     top: 631px;
-    left: 50.8%;
+    left: 51.3%;
     background-color: #f8f200;
     padding: 0 70px;
     padding-top: 72px;
@@ -29,11 +28,12 @@ body {
       0 0,
       0 50px
     );
+    .main__text {
+      font-size: 62px;
+      line-height: 100%;
+    }
   }
-  .main__text {
-    font-size: 62px;
-    line-height: 100%;
-  }
+
   .main__learn-more {
     display: inline-block;
     background-color: black;
@@ -67,15 +67,16 @@ body {
 }
 //Краткая информация об игре
 .info-game {
-  max-width: 66.4%;
+  width: 1280px;
   margin: 0 auto;
   padding-top: 70px;
   .info-game__picture {
     max-width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 60px;
+    gap: 32px;
     .info-game__grid {
       display: grid;
       grid-template-columns: auto;
@@ -113,6 +114,7 @@ body {
 // Специальное предложение
 .promotion {
   max-width: 100%;
+  height: 1500px;
   background-color: black;
   color: white;
   padding: 0 320px;
@@ -121,14 +123,66 @@ body {
     display: flex;
     align-items: end;
   }
+  .promotion__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .promotion__input {
+      margin-top: 100px;
+      display: flex;
+      align-items: center;
+      .promotion__form {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        font-family: Roboto;
+        font-size: 18px;
+        gap: 35px;
+        & > input[placeholder] {
+          border: none;
+          background-color: black;
+          color: white;
+          border-bottom: 1px solid gray;
+          &::placeholder{
+            color: #FFFFFF;
+            font-weight: 300;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        & > button {
+          width: 192px;
+          height: 59px;
+          font-family: Roboto;
+          font-weight: 700;
+          border: none;
+          background-color: #f8f200;
+        }
+        .promotion__checkbox {
+          appearance: none;
+          cursor: pointer;
+          width: 14px;
+          height: 14px;
+          border: 1px solid white;
+          &:checked {
+            position: relative;
+          }
+          &:checked::before {
+            content: "✓";
+            position: absolute;
+            color: #f8f200;
+            font-size: 14px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
 }
 
-.promotion__main {
-}
-.promotion__main_flex {
-}
-.promotion__input {
-}
 .promotion__product {
 }
 .link {
