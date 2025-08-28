@@ -564,7 +564,7 @@ progress {
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf") format("ttf"), url("../fonts/Roboto/static/Roboto-Light.ttf") format("ttf"), url("../fonts/Roboto/static/Roboto-Medium.ttf") format("ttf"), url("../fonts/Roboto/static/Roboto-Regular.ttf") format("ttf"), url("../fonts/Roboto/static/Roboto-Thin.ttf") format("ttf"), url("../fonts/Roboto/static/Roboto-ExtraLight.ttf") format("ttf"), url("../fonts/Roboto/static/Roboto-Bold.ttf") format("ttf"), url("../fonts/Roboto/static/Roboto-ExtraBold.ttf") format("ttf");
+  src: url("../fonts/Roboto/Roboto-Light.ttf") format("ttf"), url("../fonts/Roboto/Roboto-Thin.ttf") format("ttf"), url("../fonts/Roboto/Roboto-Medium.ttf") format("ttf"), url("../fonts/Roboto/Roboto-Regular.ttf") format("ttf"), url("../fonts/Roboto/Roboto-Black.ttf") format("ttf"), url("../fonts/Roboto/Roboto-Bold.ttf") format("ttf");
 }
 body {
   font-family: Archangelsk;
