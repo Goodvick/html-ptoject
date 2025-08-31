@@ -5,6 +5,26 @@ body {
   font-family: Archangelsk;
   color: black;
 }
+h1 {
+  font-family: Archangelsk;
+  font-size: 62px;
+  line-height: 100%;
+}
+a {
+  text-decoration: none;
+}
+.text {
+  font-size: 18px;
+  font-family: Roboto;
+  max-width: 952px;
+  line-height: 34px;
+  font-weight: 400;
+}
+.link {
+  text-decoration: none;
+  font-weight: 700;
+  color: #82bbd9;
+}
 // Главная
 .main {
   max-width: 100%;
@@ -28,12 +48,7 @@ body {
       0 0,
       0 50px
     );
-    .main__text {
-      font-size: 62px;
-      line-height: 100%;
-    }
   }
-
   .main__learn-more {
     display: inline-block;
     background-color: black;
@@ -43,7 +58,6 @@ body {
     font-weight: 600;
     padding: 21px 51px;
     margin-top: 10px;
-    text-decoration: none;
   }
 }
 .header {
@@ -101,24 +115,30 @@ body {
     }
   }
 }
-// Нижнее подчёркивание блока info-game
+// Верхнее подчёркивание блока promotion
 .bottom-line {
   max-width: 100%;
   height: 70px;
-  background-image: url("../img/bottom-line.png");
+  background-image: url("../img/bottom-line(white).png");
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
   margin-top: 70px;
 }
+// Нижнее подчёркивание блока promotion
+.bottom-line_underline {
+  margin-top: 0;
+  margin-bottom: 70px;
+  background-image: url("../img/bottom-line(yellow).png");
+}
 // Специальное предложение
 .promotion {
   max-width: 100%;
-  height: 1500px;
   background-color: black;
   color: white;
   padding: 0 320px;
   padding-top: 15px;
+  padding-bottom: 60px;
   .promotion__title {
     display: flex;
     align-items: end;
@@ -143,8 +163,8 @@ body {
           background-color: black;
           color: white;
           border-bottom: 1px solid gray;
-          &::placeholder{
-            color: #FFFFFF;
+          &::placeholder {
+            color: #ffffff;
             font-weight: 300;
           }
           &:focus {
@@ -159,34 +179,115 @@ body {
           border: none;
           background-color: #f8f200;
         }
-        .promotion__checkbox {
-          appearance: none;
-          cursor: pointer;
-          width: 14px;
-          height: 14px;
-          border: 1px solid white;
-          &:checked {
-            position: relative;
-          }
-          &:checked::before {
-            content: "✓";
-            position: absolute;
-            color: #f8f200;
-            font-size: 14px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        .promotion__label {
+          display: flex;
+          font-size: 12px;
+          font-weight: 300;
+          align-items: center;
+          gap: 10px;
+          margin-top: -20px;
+          .promotion__checkbox {
+            appearance: none;
+            cursor: pointer;
+            width: 14px;
+            height: 14px;
+            border: 1px solid white;
+            &:checked {
+              position: relative;
+            }
+            &:checked::before {
+              content: "✓";
+              position: absolute;
+              color: #f8f200;
+              font-size: 14px;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
           }
         }
       }
     }
   }
+  .promotion__product {
+    display: flex;
+    position: relative;
+    .promotion__items {
+      width: 460px;
+      height: 456px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      text-align: center;
+    }
+  }
 }
-
-.promotion__product {
+// Блок cooperation
+.cooperation {
+  max-width: 100%;
+  padding: 0 320px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  margin-top: -70px;
+  background-color: #f8f200;
+  font-family: Roboto;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  .cooperation__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
+  }
+  .cooperation__description {
+    padding-left: 31px;
+  }
+  .cooperation__specifications {
+    margin-top: 5px;
+    line-height: 50px;
+    font-size: 18px;
+    .cooperation__button {
+      display: block;
+      width: fit-content;
+      padding: 5px 50px;
+      background-color: black;
+      color: #f8f200;
+      margin-top: 32px;
+    }
+  }
 }
-.link {
-  text-decoration: none;
-  font-weight: 700;
-  color: #82bbd9;
+.buy-game {
+  display: flex;
+  background-color: black;
+  color: white;
+  .buy-game__description {
+    font-family: Roboto;
+    max-width: 35.625%;
+    padding: 72px 30px 0 32px;
+    & p {
+      color: #52bedc;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 100%;
+    }
+  }
+}
+footer {
+  font-family: Roboto;
+  padding: 14px 0;
+  font-size: 18px;
+  .footer__flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+.about-company {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 12px;
+  padding: 10px 0;
 }

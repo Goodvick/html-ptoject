@@ -20,7 +20,7 @@
         "
       >
         <div class="main__more">
-          <p class="main__text">Доступно на всех платформах</p>
+          <h1>Доступно на всех платформах</h1>
           <a href="#" class="main__learn-more">Узнать больше</a>
         </div>
       </div>
@@ -39,18 +39,8 @@
     </header>
     <!-- Краткая информация об игре -->
     <div class="info-game">
-      <h1 style="font-size: 62px">Найт-Сити изменит тебя навсегда!</h1>
-      <p
-        style="
-          font-size: 18px;
-          font-family: Roboto;
-          font-weight: 400;
-          max-width: 952px;
-          margin-top: 20px;
-          line-height: 34px;
-          color: gray;
-        "
-      >
+      <h1>Найт-Сити изменит тебя навсегда!</h1>
+      <p class="text" style="margin-top: 20px; color: gray">
         <a class="link" href="#">Cyberpunk 2077</a>
         — приключенческая ролевая игра, действие которой происходит в мегаполисе
         Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты
@@ -83,7 +73,7 @@
         ></div>
       </div>
     </div>
-    <!-- Нижнее подчёркивание блока info-game -->
+    <!-- Верхнее подчёркивание блока promotion -->
     <div class="bottom-line"></div>
     <!-- Специальное предложение -->
     <div class="promotion">
@@ -102,18 +92,9 @@
             >акция</span
           >
         </div>
-        <h1 style="font-size: 62px; margin-left: 32px">Играй и выигрывай!</h1>
+        <h1 style="margin-left: 32px">Играй и выигрывай!</h1>
       </div>
-      <p
-        style="
-          font-size: 18px;
-          font-family: Roboto;
-          width: 952px;
-          margin-top: 30px;
-          line-height: 34px;
-          font-weight: 400;
-        "
-      >
+      <p class="text" style="margin-top: 30px">
         Играй в <a class="link" href="#">Cyberpunk 2077</a> и получи возможность
         выиграть консоль <a class="link" href="#">Xbox Series X</a> или
         <a class="link" href="#">Sony PlayStation 5!</a>
@@ -133,22 +114,119 @@
               style="outline: 2px dashed #777777; padding: 50px"
             />
             <button type="submit">Отправить</button>
-            <label
-              style="
-                display: flex;
-                font-size: 12px;
-                font-weight: 300;
-                align-items: center;
-                gap: 10px;
-              "
-            >
+            <label class="promotion__label">
               <input class="promotion__checkbox" type="checkbox" name="" />
               Согласен на обработку персональных данных
             </label>
           </form>
         </div>
-        <div class="promotion__product"></div>
+        <div class="promotion__product">
+          <div
+            class="promotion__items"
+            style="
+              background-image: url('img/x-box-bg.png');
+              margin-right: -135px;
+              z-index: 1;
+            "
+          >
+            <img
+              style="padding-left: 160px; padding-top: 20px"
+              src="img/x-box.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="promotion__items"
+            style="background-image: url('img/ps5-bg.png')"
+          >
+            <img
+              style="padding-left: 170px; padding-top: 30px"
+              src="img/ps5.png"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
     </div>
+    <!-- Нижнее подчёркивание блока promotion -->
+    <div class="bottom-line bottom-line_underline"></div>
+    <!-- Блок cooperation -->
+    <div class="cooperation">
+      <div>
+        <img src="img/hp.png" alt="display" />
+        <div class="cooperation__item">
+          <img src="img/svg/hp-2 logo.svg" alt="" />
+          <img src="img/svg/group.svg" alt="" />
+          <img src="img/svg/cyberpunk_2077_logo.svg" alt="" />
+        </div>
+      </div>
+      <div class="cooperation__description">
+        <h1>Полное погружение вместе с HP</h1>
+        <span class="text" style="display: block; margin-top: 25px">
+          Погрузись в современные экшен-игры с реалистичным изображением с
+          помощью монитора с диагональю 23,8 дюйма, созданном для отображения
+          максимально насыщенных цветов. Успевай реагировать на любые события с
+          временем отклика 1 мс и частотой в 144 Гц!
+        </span>
+        <div class="cooperation__specifications">
+          <img src="img/color.png" alt="color" />
+          <span style="margin-left: 5px">Яркие насыщенные цвета</span>
+          <br />
+          <img src="img/stars.png" alt="stars" />
+          <span style="margin-left: 5px">Кристальная четкость изображения</span>
+          <br />
+          <img src="img/motion.png" alt="motion" />
+          <span style="margin-left: 5px"
+            >Быстрые движения и плавный геймплей</span
+          >
+          <br />
+          <a class="cooperation__button" href="#">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <!-- Блок buy-game -->
+    <div class="buy-game">
+      <img src="img/buy-logo.jpg" alt="buy logo" />
+      <div class="buy-game__description">
+        <h1>Купить игру Cyberpunk 2077</h1>
+        <div style="margin-top: 25px">
+          <p>В комплект входит:</p>
+          <div style="line-height: 50px; font-size: 18px">
+            <img src="img/disk.png" alt="disk" />
+            <span>Футляр с игровыми дисками</span>
+            <br />
+            <img src="img/group.png" alt="group" />
+            <span>Футляр с кодом для загрузки игры и дисками (pc)</span>
+            <br />
+            <img src="img/collections.png" alt="collections" />
+            <span>Справочник с информацией об игровом мире</span>
+          </div>
+        </div>
+        <div style="margin-top: 60px">
+          <p style="margin-bottom: 25px">Выберите платформу:</p>
+          <img src="img/platforms.png" alt="platforms" />
+        </div>
+      </div>
+    </div>
+    <!-- Блок footer -->
+    <footer>
+      <div class="footer__flex">
+        <div>
+          <img
+            style="margin-right: 25px"
+            src="img/svg/cyberpunk_2077_logo.svg"
+            alt="cyberpunk 2077 logo"
+          />
+          <img src="img/svg/cd_projekt_logo.svg" alt="cd projekt logo" />
+        </div>
+        <div>
+          <span style="display: inline-block; margin-right: 25px"
+            >Лицензия</span
+          >
+          <span>Политика конфиденциальности</span>
+        </div>
+      </div>
+    </footer>
+    <div class="about-company">CD PROJEKT®, Cyberpunk®, Cyberpunk 2077®</div>
   </body>
 </html>
