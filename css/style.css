@@ -561,10 +561,14 @@ progress {
   font-family: "Archangelsk";
   src: url("../fonts/Archangelsk/archangelsk.eot");
   src: url("../fonts/Archangelsk/archangelsk.eot?#iefix") format("embedded-opentype"), url("../fonts/Archangelsk/archangelsk.woff2") format("woff2"), url("../fonts/Archangelsk/archangelsk.woff") format("woff"), url("../fonts/Archangelsk/archangelsk.ttf") format("truetype"), url("../fonts/Archangelsk/archangelsk.svg#archangelsk") format("svg");
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto/Roboto-Light.ttf") format("ttf"), url("../fonts/Roboto/Roboto-Thin.ttf") format("ttf"), url("../fonts/Roboto/Roboto-Medium.ttf") format("ttf"), url("../fonts/Roboto/Roboto-Regular.ttf") format("ttf"), url("../fonts/Roboto/Roboto-Black.ttf") format("ttf"), url("../fonts/Roboto/Roboto-Bold.ttf") format("ttf");
+  src: url("../fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
 }
 body {
   font-family: Archangelsk;
@@ -598,6 +602,18 @@ a {
 .main {
   max-width: 100%;
 }
+.main .main__slider {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+.main .main__item-slider {
+  min-width: 100%;
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
 .main .main__more {
   position: absolute;
   width: 624px;
@@ -621,7 +637,7 @@ a {
   margin-top: 10px;
 }
 
-.header {
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -632,10 +648,10 @@ a {
   transform: translate(-50%, 0);
   margin-top: 20px;
 }
-.header .header__socials {
+.nav .nav__socials {
   width: 379px;
 }
-.header .header__socials_flex {
+.nav .nav__socials_flex {
   display: flex;
   align-items: center;
   justify-content: space-between;

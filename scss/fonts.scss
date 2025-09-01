@@ -7,13 +7,13 @@
     url("../fonts/Archangelsk/archangelsk.woff") format("woff"),
     url("../fonts/Archangelsk/archangelsk.ttf") format("truetype"),
     url("../fonts/Archangelsk/archangelsk.svg#archangelsk") format("svg");
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto/Roboto-Light.ttf") format("ttf"),
-    url("../fonts/Roboto/Roboto-Thin.ttf") format("ttf"),
-    url("../fonts/Roboto/Roboto-Medium.ttf") format("ttf"),
-    url("../fonts/Roboto/Roboto-Regular.ttf") format("ttf"),
-    url("../fonts/Roboto/Roboto-Black.ttf") format("ttf"),
-    url("../fonts/Roboto/Roboto-Bold.ttf") format("ttf");
+  src: url("../fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-style: normal;
+  font-display: swap;
 }
