@@ -8,7 +8,7 @@ $(document).ready(function () {
    const setupSlider = {
       currentSlide: 0,
       autoPlay: true,
-      interval: 4000,
+      interval: 2500,
    }
 
    function switchSlide(currentIndex) {

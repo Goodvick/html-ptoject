@@ -579,6 +579,12 @@ h1 {
   font-family: Archangelsk;
   font-size: 62px;
   line-height: 100%;
+  transition: 0.4s;
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 48px;
+  }
 }
 
 a {
@@ -604,9 +610,9 @@ a {
 }
 .main .main__slider {
   display: flex;
-  transition: transform 1s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
-.main .main__item-slider {
+.main .main__slider .main__item-slider {
   min-width: 100%;
   height: 1000px;
   background-repeat: no-repeat;
@@ -619,12 +625,23 @@ a {
   width: 624px;
   height: 369px;
   top: 631px;
-  left: 51.3%;
+  left: 50.8%;
   background-color: #f8f200;
   padding: 0 70px;
   padding-top: 72px;
   margin-bottom: 50px;
   clip-path: polygon(50px 0, 0 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%, 0 0, 0 50px);
+  transition: 0.4s;
+}
+@media (max-width: 1400px) {
+  .main .main__more {
+    left: 35.5%;
+  }
+}
+@media (max-width: 1024px) {
+  .main .main__more {
+    width: 60%;
+  }
 }
 .main .main__learn-more {
   display: inline-block;
@@ -635,18 +652,30 @@ a {
   font-weight: 600;
   padding: 21px 51px;
   margin-top: 10px;
+  transition: 0.4s;
+}
+@media (max-width: 1024px) {
+  .main .main__learn-more {
+    font-size: 20px;
+  }
 }
 
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 67.941%;
+  width: 1280px;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
   margin-top: 20px;
+  transition: 0.4s;
+}
+@media (max-width: 1400px) {
+  .nav {
+    width: 952px;
+  }
 }
 .nav .nav__socials {
   width: 379px;
@@ -658,17 +687,25 @@ a {
 }
 
 .info-game {
-  width: 1280px;
-  margin: 0 auto;
-  padding-top: 70px;
+  max-width: 100%;
+  padding: 70px 16.6327% 0 16.6327%;
+}
+@media (max-width: 1400px) {
+  .info-game {
+    padding: 70px 8% 0 8%;
+  }
 }
 .info-game .info-game__picture {
-  max-width: 100%;
+  min-width: 100%;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   margin-top: 60px;
   gap: 32px;
+}
+@media (max-width: 1400px) {
+  .info-game .info-game__picture {
+    flex-wrap: wrap;
+  }
 }
 .info-game .info-game__picture .info-game__grid {
   display: grid;
@@ -676,12 +713,41 @@ a {
   grid-template-rows: auto auto;
   gap: 32px;
 }
+@media (max-width: 1400px) {
+  .info-game .info-game__picture .info-game__grid {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+}
 .info-game .info-game__picture .info-game__img {
   width: 460px;
   height: 196px;
   background-size: cover;
   background-repeat: no-repeat;
   clip-path: polygon(50px 0, 0 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%, 0 0, 0 50px);
+}
+@media (max-width: 1400px) {
+  .info-game .info-game__picture .info-game__img_size_first {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+@media (max-width: 1400px) {
+  .info-game .info-game__picture .info-game__img_size_second {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+.info-game .info-game__picture .info-game__img_size_third {
+  width: 788px;
+  height: 424px;
+}
+@media (max-width: 1400px) {
+  .info-game .info-game__picture .info-game__img_size_third {
+    width: 952px;
+  }
 }
 
 .bottom-line {
@@ -704,7 +770,7 @@ a {
   max-width: 100%;
   background-color: black;
   color: white;
-  padding: 0 320px;
+  padding: 0 16.6327%;
   padding-top: 15px;
   padding-bottom: 60px;
 }
@@ -788,6 +854,11 @@ a {
   display: flex;
   position: relative;
 }
+@media (max-width: 1900px) {
+  .promotion .promotion__product {
+    flex-direction: column;
+  }
+}
 .promotion .promotion__product .promotion__items {
   width: 460px;
   height: 456px;
@@ -798,7 +869,7 @@ a {
 
 .cooperation {
   max-width: 100%;
-  padding: 0 320px;
+  padding: 0 16.6327%;
   padding-top: 70px;
   padding-bottom: 100px;
   margin-top: -70px;
@@ -834,14 +905,20 @@ a {
 }
 
 .buy-game {
+  max-width: 100%;
   display: flex;
   background-color: black;
   color: white;
 }
+@media (max-width: 1400px) {
+  .buy-game .buy-game__img {
+    content: url("../img/buy-logo(lg).png");
+  }
+}
 .buy-game .buy-game__description {
   font-family: Roboto;
   max-width: 35.625%;
-  padding: 72px 30px 0 32px;
+  padding: 72px 1.562% 0 32px;
 }
 .buy-game .buy-game__description p {
   color: #52bedc;
