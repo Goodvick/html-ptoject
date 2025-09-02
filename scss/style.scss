@@ -366,9 +366,16 @@ a {
     @media (max-width: $breakpoint_xxl) {
       flex-direction: column;
     }
+    @media (max-width: 900px) {
+      flex-direction: row;
+    }
   }
   .cooperation__description {
     padding-left: 31px;
+    transition: 0.4s;
+    @media (max-width: 900px) {
+      margin-top: 25px;
+    }
   }
   .cooperation__specifications {
     margin-top: 5px;
@@ -394,33 +401,92 @@ a {
   background-color: black;
   color: white;
   transition: 0.4s;
+  @media (max-width: $breakpoint_md) {
+    flex-direction: column;
+  }
   .buy-game__img {
-    @media (max-width: $breakpoint_xxl) {
-      content: url("../img/buy-logo\(lg\).png");
+    width: 49.167%;
+    height: 717px;
+    background-image: url("../img/buy-logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.4s;
+    @media (max-width: $breakpoint_lg) {
+      width: 32.422%;
+    }
+    @media (max-width: $breakpoint_md) {
+      width: 100%;
+      height: 198px;
     }
   }
   .buy-game__description {
     font-family: Roboto;
-    max-width: 35.625%;
-    padding: 72px 1.562% 0 32px;
+    padding: 72px 0 0 32px;
     & p {
       color: #52bedc;
       font-size: 24px;
       font-weight: 700;
       line-height: 100%;
+      transition: 0.4s;
+    }
+    .buy-game__specifications {
+      line-height: 50px;
+      font-size: 18px;
+      transition: 0.4s;
+      @media (max-width: $breakpoint_lg) {
+        font-size: 16px;
+      }
     }
   }
 }
 footer {
   font-family: Roboto;
-  padding: 14px 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
   font-size: 18px;
+  transition: 0.4s;
+  @media (max-width: $breakpoint_md) {
+    padding-bottom: 0px;
+  }
   .footer__flex {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    transition: 0.4s;
     @media (max-width: $breakpoint_lg) {
       justify-content: space-around;
+      font-size: 16px;
+    }
+    @media (max-width: $breakpoint_md) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 25px;
+      padding-bottom: 0px;
+    }
+  }
+  .footer__logo {
+    display: flex;
+    gap: 25px;
+    transition: 0.4s;
+    @media (max-width: $breakpoint_md) {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+  .footer__about {
+    display: flex;
+    gap: 25px;
+    transition: 0.4s;
+    @media (max-width: $breakpoint_md) {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      background-color: gray;
+      padding: 14px 0;
     }
   }
 }

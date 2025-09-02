@@ -225,12 +225,15 @@
     </div>
     <!-- Блок buy-game -->
     <div class="buy-game">
-      <img class="buy-game__img" src="img/buy-logo.jpg" alt="buy logo" />
+      <div class="buy-game__img"></div>
       <div class="buy-game__description">
-        <h1>Купить игру Cyberpunk 2077</h1>
+        <h1>
+          Купить игру<br />
+          Cyberpunk 2077
+        </h1>
         <div style="margin-top: 25px">
           <p>В комплект входит:</p>
-          <div style="line-height: 50px; font-size: 18px">
+          <div class="buy-game__specifications">
             <img src="img/disk.png" alt="disk" />
             <span>Футляр с игровыми дисками</span>
             <br />
@@ -250,18 +253,29 @@
     <!-- Блок footer -->
     <footer>
       <div class="footer__flex">
-        <div>
-          <img
-            style="margin-right: 25px"
-            src="img/svg/cyberpunk_2077_logo.svg"
-            alt="Cyberpunk 2077"
-          />
-          <img src="img/svg/cd_projekt_logo.svg" alt="cd projekt logo" />
+        <div class="footer__logo">
+          <picture>
+            <source
+              srcset="img/svg/cyberpunk_2077_logo.svg"
+              media="(min-width:
+            900px)"
+            />
+            <img
+              src="img/svg/cyberpunk_2077_logo(footer(sm)).svg"
+              alt="Cyberpunk 2077"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="img/svg/cd_projekt_logo.svg"
+              media="(min-width:
+            900px)"
+            />
+            <img src="img/svg/cd_projekt_logo(sm).svg" alt="cd projekt logo" />
+          </picture>
         </div>
-        <div>
-          <span style="display: inline-block; margin-right: 25px"
-            >Лицензия</span
-          >
+        <div class="footer__about">
+          <span>Лицензия</span>
           <span>Политика конфиденциальности</span>
         </div>
       </div>
