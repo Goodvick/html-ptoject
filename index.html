@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- , initial-scale=1.0 -->
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
@@ -32,14 +33,49 @@
         </div>
       </div>
       <nav class="nav">
-        <img src="img/svg/cyberpunk_2077_logo.svg" alt="Cyberpunk 2077" />
+        <picture>
+          <source
+            srcset="img/svg/cyberpunk_2077_logo.svg"
+            media="(min-width: 576px)"
+          />
+          <img src="img/svg/cyberpunk_2077_logo(sm).svg" alt="Cyberpunk 2077" />
+        </picture>
         <div class="nav__socials nav__socials_flex">
-          <a href="#"><img src="img/svg/youtube.svg" alt="youtube" /></a>
-          <a href="#"><img src="img/svg/vk.svg" alt="vk" /></a>
-          <a href="#"><img src="img/svg/facebook.svg" alt="facebook" /></a>
-          <a href="#"><img src="img/svg/twitter.svg" alt="x(twitter)" /></a>
-          <a href="#"><img src="img/svg/twitch.svg" alt="twitch" /></a>
-          <a href="#"><img src="img/svg/instagram.svg" alt="instagram" /></a>
+          <a href="#"
+            ><picture>
+              <source srcset="img/svg/youtube.svg" media="(min-width: 576px)" />
+              <img src="img/svg/youtube(sm).svg" alt="youtube" /> </picture
+          ></a>
+          <a href="#">
+            <picture>
+              <source srcset="img/svg/vk.svg" media="(min-width: 576px)" />
+              <img src="img/svg/vk(sm).svg" alt="vk"
+            /></picture>
+          </a>
+          <a href="#">
+            <picture>
+              <source
+                srcset="img/svg/facebook.svg"
+                media="(min-width: 576px)" />
+              <img src="img/svg/facebook(sm).svg" alt="facebook" /></picture
+          ></a>
+          <a href="#">
+            <picture>
+              <source srcset="img/svg/twitter.svg" media="(min-width: 576px)" />
+              <img src="img/svg/twitter(sm).svg" alt="x(twitter)" /></picture
+          ></a>
+          <a href="#"
+            ><picture>
+              <source srcset="img/svg/twitch.svg" media="(min-width: 576px)" />
+              <img src="img/svg/twitch(sm).svg" alt="twitch" /></picture
+          ></a>
+          <a href="#">
+            <picture>
+              <source
+                srcset="img/svg/instagram.svg"
+                media="(min-width: 576px)" />
+              <img src="img/svg/instagram(sm).svg" alt="instagram" /></picture
+          ></a>
         </div>
       </nav>
     </header>
@@ -152,7 +188,11 @@
     <!-- Блок cooperation -->
     <div class="cooperation">
       <div>
-        <img src="img/hp.png" alt="display" />
+        <picture>
+          <source srcset="img/hp.png" media="(min-width: 1400px)" />
+          <source srcset="img/hp(lg).png" media="(min-width: 900px)" />
+          <img src="img/hp(sm).png" alt="display" />
+        </picture>
         <div class="cooperation__item">
           <img src="img/svg/hp-2 logo.svg" alt="hp img" />
           <img src="img/svg/group.svg" alt="x img" />
@@ -227,6 +267,5 @@
       </div>
     </footer>
     <div class="about-company">CD PROJEKT®, Cyberpunk®, Cyberpunk 2077®</div>
-    <div id="1"></div>
   </body>
 </html>

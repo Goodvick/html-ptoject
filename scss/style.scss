@@ -12,7 +12,10 @@ h1 {
   line-height: 100%;
   transition: 0.4s;
   @media (max-width: $breakpoint_lg) {
-    font-size: 48px;
+    font-size: 44px;
+  }
+  @media (max-width: $breakpoint_md) {
+    font-size: 30px;
   }
 }
 a {
@@ -24,6 +27,13 @@ a {
   max-width: 952px;
   line-height: 34px;
   font-weight: 400;
+  transition: 0.4s;
+  @media (max-width: $breakpoint_lg) {
+    font-size: 16px;
+  }
+  @media (max-width: $breakpoint_md) {
+    line-height: 32px;
+  }
 }
 .link {
   text-decoration: none;
@@ -43,6 +53,10 @@ a {
       background-size: cover;
       background-position: center;
       position: relative;
+      transition: 0.4s;
+      @media (max-width: 900px) {
+        height: 763px;
+      }
     }
   }
   .main__more {
@@ -52,9 +66,7 @@ a {
     top: 631px;
     left: 50.8%;
     background-color: #f8f200;
-    padding: 0 70px;
-    padding-top: 72px;
-    margin-bottom: 50px;
+    padding: 72px 70px 50px 70px;
     clip-path: polygon(
       50px 0,
       0 0,
@@ -71,6 +83,14 @@ a {
     }
     @media (max-width: $breakpoint_lg) {
       width: 60%;
+    }
+    @media (max-width: 900px) {
+      width: 100%;
+      height: 207px;
+      top: 606px;
+      left: 0;
+      text-align: center;
+      padding: 25px 10% 0;
     }
   }
   .main__learn-more {
@@ -102,8 +122,18 @@ a {
   @media (max-width: $breakpoint_xxl) {
     width: 952px;
   }
+  @media (max-width: $breakpoint_lg) {
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
   .nav__socials {
     width: 379px;
+    transition: 0.4s;
+    @media (max-width: $breakpoint_sm) {
+      width: 296px;
+    }
   }
   .nav__socials_flex {
     display: flex;
@@ -116,7 +146,7 @@ a {
   max-width: 100%;
   padding: 70px 16.6327% 0 16.6327%;
   @media (max-width: $breakpoint_xxl) {
-    padding: 70px 8% 0 8%;
+    padding: 70px 3.6% 0 3.6%;
   }
   .info-game__picture {
     min-width: 100%;
@@ -136,6 +166,10 @@ a {
         grid-template-columns: auto auto;
         grid-template-rows: auto;
       }
+      @media (max-width: $breakpoint_md) {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+      }
     }
     .info-game__img {
       width: 460px;
@@ -152,19 +186,28 @@ a {
         0 0,
         0 50px
       );
+      transition: 0.4s;
+      @media (max-width: $breakpoint_lg) {
+        width: 320px;
+      }
     }
     .info-game__img_size_first {
       @media (max-width: $breakpoint_xxl) {
         grid-row-start: 1;
         grid-column-start: 1;
-        grid-column-end: 2;
+      }
+      @media (max-width: $breakpoint_md) {
+        grid-row-start: 1;
       }
     }
     .info-game__img_size_second {
       @media (max-width: $breakpoint_xxl) {
         grid-row-start: 1;
         grid-column-start: 2;
-        grid-column-end: 3;
+      }
+      @media (max-width: $breakpoint_md) {
+        grid-row-start: 2;
+        grid-column-start: 1;
       }
     }
     .info-game__img_size_third {
@@ -172,6 +215,12 @@ a {
       height: 424px;
       @media (max-width: $breakpoint_xxl) {
         width: 952px;
+      }
+      @media (max-width: $breakpoint_lg) {
+        width: 672px;
+      }
+      @media (max-width: $breakpoint_md) {
+        width: 320px;
       }
     }
   }
@@ -197,9 +246,11 @@ a {
   max-width: 100%;
   background-color: black;
   color: white;
-  padding: 0 16.6327%;
-  padding-top: 15px;
-  padding-bottom: 60px;
+  padding: 15px 16.6327% 60px 16.6327%;
+  transition: 0.4s;
+  @media (max-width: $breakpoint_xxl) {
+    padding: 15px 3.6% 60px 3.6%;
+  }
   .promotion__title {
     display: flex;
     align-items: end;
@@ -288,21 +339,33 @@ a {
 // Блок cooperation
 .cooperation {
   max-width: 100%;
-  padding: 0 16.6327%;
-  padding-top: 70px;
-  padding-bottom: 100px;
+  padding: 70px 16.6327% 100px 16.6327%;
   margin-top: -70px;
   background-color: #f8f200;
   font-family: Roboto;
   display: flex;
   align-items: start;
   justify-content: space-between;
+  transition: 0.4s;
+  @media (max-width: $breakpoint_xxl) {
+    padding: 70px 3.6% 100px 3.6%;
+    align-items: end;
+  }
+  @media (max-width: 900px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .cooperation__item {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 30px;
     gap: 30px;
+    transition: 0.4s;
+    @media (max-width: $breakpoint_xxl) {
+      flex-direction: column;
+    }
   }
   .cooperation__description {
     padding-left: 31px;
@@ -311,6 +374,10 @@ a {
     margin-top: 5px;
     line-height: 50px;
     font-size: 18px;
+    transition: 0.4s;
+    @media (max-width: $breakpoint_lg) {
+      font-size: 16px;
+    }
     .cooperation__button {
       display: block;
       width: fit-content;
@@ -326,6 +393,7 @@ a {
   display: flex;
   background-color: black;
   color: white;
+  transition: 0.4s;
   .buy-game__img {
     @media (max-width: $breakpoint_xxl) {
       content: url("../img/buy-logo\(lg\).png");
@@ -351,6 +419,9 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    @media (max-width: $breakpoint_lg) {
+      justify-content: space-around;
+    }
   }
 }
 .about-company {
