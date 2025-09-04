@@ -165,10 +165,11 @@ a {
     min-width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 60px;
     gap: 32px;
     @media (max-width: $breakpoint_xxl) {
-      flex-wrap: wrap;
+      flex-direction: column;
     }
     .info-game__grid {
       display: grid;
@@ -189,6 +190,7 @@ a {
       height: 196px;
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
       clip-path: polygon(
         50px 0,
         0 0,
@@ -205,9 +207,6 @@ a {
       }
     }
     .info-game__img_size_first {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
       @media (max-width: $breakpoint_xxl) {
         grid-row-start: 1;
         grid-column-start: 1;
@@ -217,9 +216,6 @@ a {
       }
     }
     .info-game__img_size_second {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
       @media (max-width: $breakpoint_xxl) {
         grid-row-start: 1;
         grid-column-start: 2;
@@ -232,9 +228,6 @@ a {
     .info-game__img_size_third {
       width: 788px;
       height: 424px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
       @media (max-width: $breakpoint_xxl) {
         width: 952px;
       }
