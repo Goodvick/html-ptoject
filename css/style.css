@@ -575,19 +575,19 @@ body {
   color: black;
 }
 
-h1 {
+h1, h2 {
   font-family: Archangelsk;
   font-size: 62px;
   line-height: 100%;
   transition: 0.4s;
 }
 @media (max-width: 1024px) {
-  h1 {
+  h1, h2 {
     font-size: 44px;
   }
 }
 @media (max-width: 767px) {
-  h1 {
+  h1, h2 {
     font-size: 30px;
   }
 }
