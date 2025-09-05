@@ -79,8 +79,8 @@
       </nav>
     </header>
     <!------------------------------ Блок info-game ------------------------------>
-    <div class="info-game">
-      <h2>Найт-Сити изменит тебя навсегда!</h2>
+    <main class="info-game">
+      <h1>Найт-Сити изменит тебя навсегда!</h1>
       <p class="text" style="margin-top: 20px; color: gray">
         <a class="link" href="#">Cyberpunk 2077</a>
         — приключенческая ролевая игра, действие которой происходит в мегаполисе
@@ -106,11 +106,11 @@
           style="background-image: url('img/grid_img3.png')"
         ></div>
       </div>
-    </div>
+    </main>
     <!-------------------- Верхнее подчёркивание блока promotion -------------------->
     <div class="bottom-line"></div>
     <!------------------------------ Блок promotion ------------------------------>
-    <div class="promotion">
+    <section class="promotion">
       <div class="promotion__grid">
         <div class="promotion__title">
           <div class="promotion__stock">
@@ -119,7 +119,7 @@
               <img src="img/svg/promo(sm).svg" alt="img promo" />
             </picture>
           </div>
-          <h2>Играй и выигрывай!</h2>
+          <h3>Играй и выигрывай!</h3>
         </div>
         <p class="promotion__text-grid text">
           Играй в <a class="link" href="#">Cyberpunk 2077</a> и получи
@@ -161,7 +161,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-------------------- Нижнее подчёркивание блока promotion -------------------->
     <div class="bottom-line bottom-line_underline"></div>
     <!------------------------------ Блок cooperation ------------------------------>
@@ -193,65 +193,63 @@
           </picture>
         </div>
       </div>
-      <div class="cooperation__description">
-        <h2>Полное погружение вместе с HP</h2>
-        <span class="text" style="display: block; margin-top: 25px">
+      <section class="cooperation__description">
+        <h3>Полное погружение вместе с HP</h3>
+        <p class="text" style="margin-top: 25px">
           Погрузись в современные экшен-игры с реалистичным изображением с
           помощью монитора с диагональю 23,8 дюйма, созданном для отображения
           максимально насыщенных цветов. Успевай реагировать на любые события с
           временем отклика 1 мс и частотой в 144 Гц!
-        </span>
-        <div class="cooperation__specifications">
-          <div class="checkbox-property">
+        </p>
+        <dl class="cooperation__specifications">
+          <dd class="checkbox-property">
             <img src="img/color.png" alt="color" />
-            <span>Яркие насыщенные цвета</span>
-          </div>
-          <div class="checkbox-property checkbox-property_margin">
+            <p>Яркие насыщенные цвета</p>
+          </dd>
+          <dd class="checkbox-property checkbox-property_margin">
             <img src="img/stars.png" alt="stars" />
-            <span>Кристальная четкость изображения</span>
-          </div>
-          <div class="checkbox-property">
+            <p>Кристальная четкость изображения</p>
+          </dd>
+          <dd class="checkbox-property">
             <img src="img/motion.png" alt="motion" />
-            <span>Быстрые движения и плавный геймплей</span>
-          </div>
+            <p>Быстрые движения и плавный геймплей</p>
+          </dd>
           <a class="cooperation__button" href="#">Подробнее</a>
-        </div>
-      </div>
+        </dl>
+      </section>
     </div>
     <!------------------------------ Блок buy-game ------------------------------>
-    <div class="buy-game">
+    <section class="buy-game">
       <div class="buy-game__img"></div>
       <div class="buy-game__description">
-        <h1>
+        <h2>
           Купить игру<br />
           Cyberpunk 2077
-        </h1>
-        <div style="margin-top: 25px">
-          <p>В комплект входит:</p>
-          <div class="buy-game__specifications">
-            <div class="checkbox-property">
-              <img src="img/disk.png" alt="disk" />
-              <span>Футляр с игровыми дисками</span>
-            </div>
-            <div class="checkbox-property checkbox-property_margin">
-              <img src="img/group.png" alt="group" />
-              <span>Футляр с кодом для загрузки игры и дисками (pc)</span>
-            </div>
-            <div class="checkbox-property">
-              <img src="img/collections.png" alt="collections" />
-              <span>Справочник с информацией об игровом мире</span>
-            </div>
-          </div>
-        </div>
-        <div class="buy-game__platforms">
-          <p style="margin-bottom: 25px">Выберите платформу:</p>
+        </h2>
+        <dl style="margin-top: 25px">
+          <dt style="margin-bottom: 25px">В комплект входит:</dt>
+          <dd class="checkbox-property">
+            <img src="img/disk.png" alt="disk" />
+            <p>Футляр с игровыми дисками</p>
+          </dd>
+          <dd class="checkbox-property checkbox-property_margin">
+            <img src="img/group.png" alt="group" />
+            <p>Футляр с кодом для загрузки игры и дисками (pc)</p>
+          </dd>
+          <dd class="checkbox-property">
+            <img src="img/collections.png" alt="collections" />
+            <p>Справочник с информацией об игровом мире</p>
+          </dd>
+        </dl>
+        <dl class="buy-game__platforms">
+          <dt style="margin-bottom: 25px">Выберите платформу:</dt>
           <picture>
             <source srcset="img/svg/platforms.svg" media="(min-width: 576px)" />
             <img src="img/svg/platforms(sm).svg" alt="platforms" />
           </picture>
-        </div>
+        </dl>
       </div>
-    </div>
+    </section>
     <!------------------------------ Блок footer ------------------------------>
     <footer>
       <div class="footer__flex">
@@ -263,6 +261,7 @@
             900px)"
             />
             <img
+              style="cursor: pointer"
               src="img/svg/cyberpunk_2077_logo(footer(sm)).svg"
               alt="Cyberpunk 2077"
             />
@@ -273,12 +272,16 @@
               media="(min-width:
             900px)"
             />
-            <img src="img/svg/cd_projekt_logo(sm).svg" alt="cd projekt logo" />
+            <img
+              style="cursor: pointer"
+              src="img/svg/cd_projekt_logo(sm).svg"
+              alt="cd projekt logo"
+            />
           </picture>
         </div>
         <div class="footer__about">
-          <span>Лицензия</span>
-          <span>Политика конфиденциальности</span>
+          <a href="#">Лицензия</a>
+          <a href="#">Политика конфиденциальности</a>
         </div>
       </div>
     </footer>

@@ -575,19 +575,25 @@ body {
   color: black;
 }
 
-h1, h2 {
+h1,
+h2,
+h3 {
   font-family: Archangelsk;
   font-size: 62px;
   line-height: 100%;
   transition: 0.4s;
 }
 @media (max-width: 1024px) {
-  h1, h2 {
+  h1,
+  h2,
+  h3 {
     font-size: 44px;
   }
 }
 @media (max-width: 767px) {
-  h1, h2 {
+  h1,
+  h2,
+  h3 {
     font-size: 30px;
   }
 }
@@ -624,9 +630,18 @@ a {
 .checkbox-property {
   display: flex;
   align-items: center;
+  font-size: 18px;
   line-height: 100%;
   gap: 8px;
   transition: 0.4s;
+}
+.checkbox-property > p {
+  margin-bottom: 0px;
+}
+@media (max-width: 1024px) {
+  .checkbox-property {
+    font-size: 16px;
+  }
 }
 @media (max-width: 576px) {
   .checkbox-property {
@@ -1259,8 +1274,10 @@ a {
   }
 }
 .buy-game .buy-game__img {
+  display: block;
   width: 49.167%;
   height: 717px;
+  box-sizing: border-box;
   background-image: url("../img/buy-logo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1280,9 +1297,9 @@ a {
 }
 .buy-game .buy-game__description {
   font-family: Roboto;
-  padding: 72px 0 80px 32px;
+  padding: 72px 0 0 32px;
 }
-.buy-game .buy-game__description p {
+.buy-game .buy-game__description dt {
   color: #52bedc;
   font-size: 24px;
   font-weight: 700;
@@ -1292,15 +1309,6 @@ a {
 @media (max-width: 767px) {
   .buy-game .buy-game__description {
     padding: 38px 3.6% 80px 3.6%;
-  }
-}
-.buy-game .buy-game__description .buy-game__specifications {
-  font-size: 18px;
-  transition: 0.4s;
-}
-@media (max-width: 1024px) {
-  .buy-game .buy-game__description .buy-game__specifications {
-    font-size: 16px;
   }
 }
 .buy-game .buy-game__description .buy-game__platforms {
@@ -1362,6 +1370,13 @@ footer .footer__about {
   display: flex;
   gap: 25px;
   transition: 0.4s;
+}
+footer .footer__about > a {
+  color: black;
+}
+footer .footer__about > a:hover {
+  transition: 0.4s;
+  color: #52bedc;
 }
 @media (max-width: 767px) {
   footer .footer__about {

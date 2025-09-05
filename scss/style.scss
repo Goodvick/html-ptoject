@@ -6,7 +6,9 @@ body {
   font-family: Archangelsk;
   color: black;
 }
-h1, h2 {
+h1,
+h2,
+h3 {
   font-family: Archangelsk;
   font-size: 62px;
   line-height: 100%;
@@ -43,9 +45,16 @@ a {
 .checkbox-property {
   display: flex;
   align-items: center;
+  font-size: 18px;
   line-height: 100%;
   gap: 8px;
   transition: 0.4s;
+  & > p {
+    margin-bottom: 0px;
+  }
+  @media (max-width: $breakpoint_lg) {
+    font-size: 16px;
+  }
   @media (max-width: $breakpoint_sm) {
     gap: 15px;
   }
@@ -585,8 +594,10 @@ a {
     flex-direction: column;
   }
   .buy-game__img {
+    display: block;
     width: 49.167%;
     height: 717px;
+    box-sizing: border-box;
     background-image: url("../img/buy-logo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -602,8 +613,8 @@ a {
   }
   .buy-game__description {
     font-family: Roboto;
-    padding: 72px 0 80px 32px;
-    & p {
+    padding: 72px 0 0 32px;
+    & dt {
       color: #52bedc;
       font-size: 24px;
       font-weight: 700;
@@ -612,13 +623,6 @@ a {
     }
     @media (max-width: $breakpoint_md) {
       padding: 38px 3.6% 80px 3.6%;
-    }
-    .buy-game__specifications {
-      font-size: 18px;
-      transition: 0.4s;
-      @media (max-width: $breakpoint_lg) {
-        font-size: 16px;
-      }
     }
     .buy-game__platforms {
       margin-top: 60px;
@@ -670,6 +674,13 @@ footer {
     display: flex;
     gap: 25px;
     transition: 0.4s;
+    & > a {
+      color: black;
+      &:hover {
+        transition: 0.4s;
+        color: #52bedc;
+      }
+    }
     @media (max-width: $breakpoint_md) {
       width: 100%;
       flex-direction: column;
